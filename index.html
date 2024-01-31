@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-black">
+
+<!--Start of  search section -->
+<section id="hero" class="container py-5">
+    <input id="search" type="search" placeholder="Search" class="form-control w-50 mx-auto bg-black rounded-pill text-white shadow-none border-white px-3" onclick="searchByName()">
+    <div class="container">
+        <div class="row gy-3 py-3" id="searchContainer">
+
+        </div>
+
+
+
+    </div>
+    </div>
+        <div class="row g-4 mt-3 text-white"></div>
+    
+<!--End of search section  -->
+        <header class="d-flex">
+        <div class="side-nav  min-vh-100 top-0 d-flex text-light">
+            <div class="nav-tab min-vh-100  bg-black ">
+                <div class="list pt-4  ">
+                    <ul>
+                        <a href="#hero"><li onclick="getplayingNow()" class="py-2" id="nowPlaying">Now Playing</li></a>
+                        <a href="#hero"><li onclick="getPopular()" class="py-2" id="popualr">Popualr</li></a>
+                        <a href="#hero"><li onclick="gettopRatedMovie()" class="py-2" id="topRated">Top Rated</li></a>
+                        <a href="#hero"><li onclick="getTrendingMovie()" class="py-2" id="trending">Trending</li></a>
+                        <a href="#hero"><li onclick="getupComingMovie()" class="py-2" id="upcoming">Upcoming</li></a>
+                       <a href="#contactData"><li onclick="displayContacts()" class="py-2" id="contactUs">Contact Us</li></a> 
+                       
+                    </ul>
+                </div>
+                <div class="social-icons text-light ps-4">
+                    <i class="fab fa-facebook-f fa-fw"></i>
+                    <i class="fab fa-twitter fa-fw"></i>
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="footer text-light fw-lighter"> Copyright © 2022 All Rights<br/>Reserved.</div>
+                </div>
+            </div>
+
+            <div class=" nav-header d-flex justify-content-between px-2 py-4 bg-white text-black text-center flex-column">
+                <img src="./imgs/logo.png" class="logo">
+                <i class=" open fa-solid open-close-icon fa-2x fa-2 fa-align-justify"></i>
+                <div class="icons">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+
+        </div>
+    </header>
+      
+
+  
+      
+      
+        <section id="">
+        <div class="container">
+            <div class="row gy-3 py-3" id="nowPlayingMovie">
+
+            </div>
+
+
+
+        </div>
+        </div>
+      </section>
+
+
+        <div class="container">
+            <div class="row gy-3 py-3" id="popularMovie">
+
+            </div>
+
+
+
+        </div>
+        </div>
+        <div class="container">
+            <div class="row gy-3 py-3" id="topRatedMovie">
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+        <div class="container ">
+            <div class="row gy-3 py-3" id="trendingMovie">
+
+            </div>
+
+
+
+        </div>
+        </div>
+        <div class="container ">
+            <div class="row gy-3 py-3" id="upComingMovie">
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+
+        <div class="container w-75" id="search-container">
+
+
+        </div>
+        </div>
+        <div id="contact">
+            <div class="container w-75 text-center">
+
+            </div>
+        </div>
+
+        </div>
+
+
+            <form id="contactData" class="py-5 mt-5">
+
+            </form>
+
+
+            <div class="loder bg-black  position-fixed top-0 start-0 end-0  bottom-0" id="loder">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="spinner-border" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+
+
+ 
+
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
